@@ -15,6 +15,7 @@
 		F0634DB8253F192400D651BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0634DB6253F192400D651BF /* LaunchScreen.storyboard */; };
 		F0634DC3253F192400D651BF /* SwiftyIRDB_TPKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0634DC2253F192400D651BF /* SwiftyIRDB_TPKTests.swift */; };
 		F0634DCE253F192500D651BF /* SwiftyIRDB_TPKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0634DCD253F192500D651BF /* SwiftyIRDB_TPKUITests.swift */; };
+		F0634DE2253F1DCD00D651BF /* IRDb_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0634DE1253F1DCD00D651BF /* IRDb_TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F0634DC9253F192500D651BF /* SwiftyIRDB_TPKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyIRDB_TPKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0634DCD253F192500D651BF /* SwiftyIRDB_TPKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyIRDB_TPKUITests.swift; sourceTree = "<group>"; };
 		F0634DCF253F192500D651BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0634DE1253F1DCD00D651BF /* IRDb_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRDb_TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F0634DAB253F192100D651BF /* AppDelegate.swift */,
 				F0634DAD253F192100D651BF /* SceneDelegate.swift */,
 				F0634DAF253F192100D651BF /* ViewController.swift */,
+				F0634DE1253F1DCD00D651BF /* IRDb_TableViewController.swift */,
 				F0634DB1253F192100D651BF /* Main.storyboard */,
 				F0634DB4253F192400D651BF /* Assets.xcassets */,
 				F0634DB6253F192400D651BF /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0634DE2253F1DCD00D651BF /* IRDb_TableViewController.swift in Sources */,
 				F0634DB0253F192100D651BF /* ViewController.swift in Sources */,
 				F0634DAC253F192100D651BF /* AppDelegate.swift in Sources */,
 				F0634DAE253F192100D651BF /* SceneDelegate.swift in Sources */,
