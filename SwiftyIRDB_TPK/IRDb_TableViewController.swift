@@ -13,6 +13,15 @@ class IRDb_TableViewController: UITableViewController {
     var outerArray = ["First section name", "Second section name"]
     var innerArray1 = ["frist thing", "second thing", "third thing"]
     var innerArray2 = ["frist thing", "second thing", "third thing", "fourth thing"]
+    
+    var mediaModel: IRDb_MediaDataModel? {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
+    var dataController = IRDb_DataController()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +45,9 @@ class IRDb_TableViewController: UITableViewController {
            
          // 5
          navigationItem.titleView = imageView
+        
+        // call data controller
+        dataController.getJSONData(completion: {dataModel in self.mediaModel = dataModel})
 
     }
 

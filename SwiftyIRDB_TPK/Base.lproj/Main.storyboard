@@ -68,7 +68,7 @@
         <!--Root View Controller-->
         <scene sceneID="fgo-eE-Hbv">
             <objects>
-                <tableViewController id="RYP-d9-dbB" sceneMemberID="viewController">
+                <tableViewController id="RYP-d9-dbB" customClass="IRDb_TableViewController" customModule="SwiftyIRDB_TPK" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="v4v-Me-IQl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

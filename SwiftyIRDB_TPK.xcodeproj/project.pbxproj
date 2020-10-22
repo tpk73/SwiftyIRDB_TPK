@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00133C82541C27900B5BBA2 /* IRDb_DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00133C72541C27900B5BBA2 /* IRDb_DataController.swift */; };
+		F00133D02541C29000B5BBA2 /* IRDb_MediaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00133CF2541C29000B5BBA2 /* IRDb_MediaDataModel.swift */; };
 		F0634DAC253F192100D651BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0634DAB253F192100D651BF /* AppDelegate.swift */; };
 		F0634DAE253F192100D651BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0634DAD253F192100D651BF /* SceneDelegate.swift */; };
 		F0634DB0253F192100D651BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0634DAF253F192100D651BF /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F00133C72541C27900B5BBA2 /* IRDb_DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRDb_DataController.swift; sourceTree = "<group>"; };
+		F00133CF2541C29000B5BBA2 /* IRDb_MediaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRDb_MediaDataModel.swift; sourceTree = "<group>"; };
 		F0634DA8253F192100D651BF /* SwiftyIRDB_TPK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyIRDB_TPK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0634DAB253F192100D651BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0634DAD253F192100D651BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				F0634DAD253F192100D651BF /* SceneDelegate.swift */,
 				F0634DAF253F192100D651BF /* ViewController.swift */,
 				F0634DE1253F1DCD00D651BF /* IRDb_TableViewController.swift */,
+				F00133C72541C27900B5BBA2 /* IRDb_DataController.swift */,
+				F00133CF2541C29000B5BBA2 /* IRDb_MediaDataModel.swift */,
 				F0634DB1253F192100D651BF /* Main.storyboard */,
 				F0634DB4253F192400D651BF /* Assets.xcassets */,
 				F0634DB6253F192400D651BF /* LaunchScreen.storyboard */,
@@ -263,6 +269,8 @@
 			files = (
 				F0634DE2253F1DCD00D651BF /* IRDb_TableViewController.swift in Sources */,
 				F0634DB0253F192100D651BF /* ViewController.swift in Sources */,
+				F00133C82541C27900B5BBA2 /* IRDb_DataController.swift in Sources */,
+				F00133D02541C29000B5BBA2 /* IRDb_MediaDataModel.swift in Sources */,
 				F0634DAC253F192100D651BF /* AppDelegate.swift in Sources */,
 				F0634DAE253F192100D651BF /* SceneDelegate.swift in Sources */,
 			);
