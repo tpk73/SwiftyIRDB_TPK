@@ -30,7 +30,7 @@ class IRDb_DataController: NSObject {
                 let thisMediaData = try decoder.decode(IRDb_MediaDataModel.self, from: thisData)
                 
                 self.dataModel = thisMediaData
-                print(thisMediaData.franchise)
+                print(thisMediaData.franchise[0].entries[0].summary)
             }
             catch let err {
                 print("Error Was: ", err)

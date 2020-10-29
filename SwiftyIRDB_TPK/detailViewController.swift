@@ -41,7 +41,7 @@ class detailViewController: UIViewController {
                     if countEpisodes > 1 {
                         label.text = "\(countEpisodes) Episodes"
                     } else {
-                        label.text = "\(countEpisodes) Episodes"
+                        label.text = "\(countEpisodes) Episode"
                     }
                 } else {
                     label.text = ""
@@ -62,6 +62,9 @@ class detailViewController: UIViewController {
                 let data = try? Data(contentsOf: url!)
                 imageView.image = UIImage(data: data!)
             }
+            if let thisLabel = descriptionLabel {
+                thisLabel.text = detail.description
+            }
         }
     }
     
@@ -74,28 +77,26 @@ class detailViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+
+        let nav = self.navigationController?.navigationBar
+
+        nav?.barStyle = UIBarStyle.black
+        nav?.tintColor = UIColor.init(red: 245/255, green: 196/255, blue: 72/255, alpha: 1)
         
-        // Do any additional setup after loading the view.
+        title = detailItem?.name
         
-        // 1
-         let nav = self.navigationController?.navigationBar
-       
-         // 2
-         nav?.barStyle = UIBarStyle.black
-         nav?.tintColor = UIColor.init(red: 245/255, green: 196/255, blue: 72/255, alpha: 1)
+        configureView()
         
     }
-    
-//    override func prepare (for segue: UIStoryboard, sender: Any?) {
-//        if segue.identifier == "showMediaDetail" {
-//            let controller = (segue.destination as! UINavigationController).topViewController as! CastListTableViewController
-//            if let castList = detailItem?.starring {
-//                controller.castList = castlist
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "toTheNextOne" {
+            let controller = segue.destination as! castTableViewController
+            controller.castListArray = detailItem?.starring
 
-
+        }
+    }
 
 }
 
