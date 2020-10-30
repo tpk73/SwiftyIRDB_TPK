@@ -9,7 +9,7 @@ import UIKit
 
 class castTableViewController: UITableViewController {
     
-    var castListArray: [Cast]
+    var castListArray: [Cast]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,17 +25,20 @@ class castTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return castListArray.count ?? 0
+        return castListArray?.count ?? 0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "castCell", for: indexPath)
 
         // Configure the cell...
         
         // use the values in the array to make cast list pretty
-
+        cell.textLabel?.text = (castListArray?[indexPath.row].actorName)! + " acting as:"
+        
+        cell.detailTextLabel?.text = castListArray?[indexPath.row].role
+        
         return cell
     }
 }
