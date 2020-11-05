@@ -7,9 +7,9 @@
 
 import UIKit
 
-class IRDb_DataController: NSObject {
+class NFL_DataController: NSObject {
     
-    let JSONURL = "https://api.jsonbin.io/b/5eb061a247a2266b1472bcf9/1"
+    let JSONURL = "https://api.jsonbin.io/b/5fa35a66a03d4a3bab0ced86"
     
     var dataModel: IRDb_MediaDataModel?
     
@@ -30,7 +30,7 @@ class IRDb_DataController: NSObject {
                 let thisMediaData = try decoder.decode(IRDb_MediaDataModel.self, from: thisData)
                 
                 self.dataModel = thisMediaData
-                print(thisMediaData.franchise[0].entries[0].summary)
+                //print(thisMediaData.franchise[0].entries[0].summary)
             }
             catch let err {
                 print("Error Was: ", err)

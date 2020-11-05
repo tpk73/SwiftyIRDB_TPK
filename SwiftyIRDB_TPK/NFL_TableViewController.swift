@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IRDb_TableViewController: UITableViewController {
+class NFL_TableViewController: UITableViewController {
 
     var mediaModel: IRDb_MediaDataModel? {
         didSet {
@@ -15,13 +15,13 @@ class IRDb_TableViewController: UITableViewController {
         }
     }
     
-    var dataController = IRDb_DataController()
+    var dataController = NFL_DataController()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "IRDb"
+        title = "NFL"
         
         // 1
          let nav = self.navigationController?.navigationBar
@@ -35,7 +35,7 @@ class IRDb_TableViewController: UITableViewController {
          imageView.contentMode = .scaleAspectFit
            
          // 4
-         let image = UIImage(named: "IRDbLogo")
+         let image = UIImage(named: "nfl")
          imageView.image = image
            
          // 5
@@ -49,16 +49,16 @@ class IRDb_TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return mediaModel?.franchise.count ?? 0
+        return mediaModel?.NFL.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return mediaModel?.franchise[section].franchiseName
+        return mediaModel?.NFL[section].divisionName
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return mediaModel?.franchise[section].entries.count ?? 0
+        return mediaModel?.NFL[section].teams.count ?? 0
         
     }
     
@@ -66,9 +66,9 @@ class IRDb_TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mediaCell", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = mediaModel?.franchise[indexPath.section].entries[indexPath.row].name
+        cell.textLabel?.text = mediaModel?.NFL[indexPath.section].teams[indexPath.row].teamName
         
-        cell.detailTextLabel?.text = mediaModel?.franchise[indexPath.section].entries[indexPath.row].yearStart
+        cell.detailTextLabel?.text = mediaModel?.NFL[indexPath.section].teams[indexPath.row].location
         
         return cell
     }
@@ -81,7 +81,7 @@ class IRDb_TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "showMediaDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let selectedObject = mediaModel!.franchise[indexPath.section].entries[indexPath.row]
+                let selectedObject = mediaModel!.NFL[indexPath.section].teams[indexPath.row]
                 let controller = segue.destination as! detailViewController
                 controller.detailItem = selectedObject
             }

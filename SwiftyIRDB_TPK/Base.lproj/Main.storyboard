@@ -26,7 +26,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="iIW-ZS-Yu7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
-                                        <state key="normal" title="CAST LIST">
+                                        <state key="normal" title="Coaching List">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
                                         <connections>
@@ -67,12 +67,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="episode label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZU-3K-51Q">
-                                        <rect key="frame" x="305" y="99" width="101" height="27"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="year label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGY-HZ-vnM">
                                         <rect key="frame" x="176" y="48.5" width="73.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -83,14 +77,11 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="U1y-y7-WwV" firstAttribute="leading" secondItem="SCN-6G-Kro" secondAttribute="trailing" constant="8" id="4EW-Xu-y6d"/>
-                                    <constraint firstAttribute="trailing" secondItem="YZU-3K-51Q" secondAttribute="trailing" constant="8" id="5Ww-NT-Tfw"/>
-                                    <constraint firstItem="YZU-3K-51Q" firstAttribute="top" secondItem="JE4-BQ-WGD" secondAttribute="bottom" constant="58.5" id="6j5-lg-8FG"/>
                                     <constraint firstItem="JE4-BQ-WGD" firstAttribute="leading" secondItem="SCN-6G-Kro" secondAttribute="trailing" constant="8" id="7JF-Vv-HYw"/>
                                     <constraint firstItem="JGY-HZ-vnM" firstAttribute="top" secondItem="JE4-BQ-WGD" secondAttribute="bottom" constant="8" id="7oP-wr-8LH"/>
                                     <constraint firstItem="JE4-BQ-WGD" firstAttribute="top" secondItem="yVV-hH-QwE" secondAttribute="top" constant="8" id="EHM-Bi-prO"/>
                                     <constraint firstItem="SCN-6G-Kro" firstAttribute="leading" secondItem="yVV-hH-QwE" secondAttribute="leading" constant="8" id="G0f-a2-B09"/>
                                     <constraint firstItem="SCN-6G-Kro" firstAttribute="top" secondItem="yVV-hH-QwE" secondAttribute="top" constant="8" id="LV0-Tj-JsA"/>
-                                    <constraint firstItem="45u-Ih-wMm" firstAttribute="top" secondItem="YZU-3K-51Q" secondAttribute="bottom" constant="8" id="OUb-2l-4gB"/>
                                     <constraint firstItem="45u-Ih-wMm" firstAttribute="leading" secondItem="SCN-6G-Kro" secondAttribute="trailing" constant="8" id="Puz-zP-uMn"/>
                                     <constraint firstItem="JGY-HZ-vnM" firstAttribute="leading" secondItem="SCN-6G-Kro" secondAttribute="trailing" constant="8" id="Rge-MS-Np3"/>
                                     <constraint firstItem="45u-Ih-wMm" firstAttribute="top" secondItem="PK3-r2-9ft" secondAttribute="bottom" constant="8" id="Si7-kh-hwa"/>
@@ -149,14 +140,13 @@
                     <navigationItem key="navigationItem" id="jt4-zU-CPM"/>
                     <connections>
                         <outlet property="castListButton" destination="45u-Ih-wMm" id="ETl-hG-Chh"/>
-                        <outlet property="descriptionLabel" destination="eAB-bz-UXA" id="c6U-cC-8MR"/>
-                        <outlet property="episodeLabel" destination="YZU-3K-51Q" id="58l-Xm-vOh"/>
-                        <outlet property="formatLabel" destination="U1y-y7-WwV" id="Ice-tt-q8h"/>
-                        <outlet property="posterImageView" destination="0dx-HH-FZM" id="TgI-dC-b8z"/>
-                        <outlet property="studioNetworkLabel" destination="PK3-r2-9ft" id="tCf-BJ-y1i"/>
-                        <outlet property="summaryTextView" destination="jMb-vj-Cd9" id="h2c-mB-bab"/>
-                        <outlet property="titleLabel" destination="JE4-BQ-WGD" id="dJ0-I1-Pak"/>
-                        <outlet property="yearLabel" destination="JGY-HZ-vnM" id="TZ9-0v-7c9"/>
+                        <outlet property="division" destination="PK3-r2-9ft" id="scx-wJ-OMy"/>
+                        <outlet property="imageURL" destination="0dx-HH-FZM" id="xc5-V8-dcx"/>
+                        <outlet property="location" destination="JGY-HZ-vnM" id="vNz-Y2-nv6"/>
+                        <outlet property="stadium" destination="U1y-y7-WwV" id="mCa-jd-1wv"/>
+                        <outlet property="summary" destination="jMb-vj-Cd9" id="tVJ-GB-hAt"/>
+                        <outlet property="superBowlWins" destination="eAB-bz-UXA" id="3hs-Vv-sWB"/>
+                        <outlet property="teamName" destination="JE4-BQ-WGD" id="U2m-WU-fxa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -211,13 +201,13 @@
         <!--Root View Controller-->
         <scene sceneID="fgo-eE-Hbv">
             <objects>
-                <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="RYP-d9-dbB" customClass="IRDb_TableViewController" customModule="SwiftyIRDB_TPK" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="RYP-d9-dbB" customClass="NFL_TableViewController" customModule="SwiftyIRDB_TPK" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="v4v-Me-IQl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mediaCell" textLabel="VgF-1C-jeD" detailTextLabel="IIR-rf-YdT" style="IBUITableViewCellStyleValue1" id="HGU-Bw-A8D">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mediaCell" textLabel="VgF-1C-jeD" detailTextLabel="k28-Wi-HdP" style="IBUITableViewCellStyleValue1" id="HGU-Bw-A8D">
                                 <rect key="frame" x="20" y="55.5" width="374" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HGU-Bw-A8D" id="oJy-je-io9">
@@ -231,7 +221,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IIR-rf-YdT">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k28-Wi-HdP">
                                             <rect key="frame" x="310" y="12" width="44" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>

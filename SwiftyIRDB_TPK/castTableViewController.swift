@@ -35,7 +35,7 @@ class castTableViewController: UITableViewController {
         // Configure the cell...
         
         // use the values in the array to make cast list pretty
-        cell.textLabel?.text = (castListArray?[indexPath.row].actorName)! + " acting as:"
+        cell.textLabel?.text = (castListArray?[indexPath.row].coachName)! + "- as -"
         
         cell.detailTextLabel?.text = castListArray?[indexPath.row].role
         

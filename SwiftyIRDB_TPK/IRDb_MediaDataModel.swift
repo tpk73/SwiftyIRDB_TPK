@@ -8,30 +8,27 @@
 import UIKit
 
 class IRDb_MediaDataModel: Codable {
-    var franchise: [Franchise]
+    var NFL: [Franchise]
 }
 
 class Franchise: Codable{
-    let franchiseName: String
-    let entries: [Entry]
+    let divisionName: String
+    let teams: [Entry]
 }
 
 class Entry: Codable{
-    let name: String
-    let format: String
-    let yearStart: String
-    let yearEnd: String?
-    let episodes: Int?
-    let studio: String?
-    let network: String?
+    let teamName: String
+    let location: String
+    let stadium: String
+    let division: String
     let imageURL: String
-    let description: String
+    let superBowlWins: String
     let summary: String
-    let starring: [Cast]
+    let coaching: [Cast]
 }
 
 class Cast: Codable{
-    let actorName: String
+    let coachName: String
     let role: String
 }
 
